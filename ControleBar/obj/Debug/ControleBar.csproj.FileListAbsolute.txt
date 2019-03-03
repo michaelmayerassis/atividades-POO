@@ -1,0 +1,10 @@
+C:\Users\micha\source\repos\ControleBar\ControleBar\bin\Debug\ControleBar.exe.config
+C:\Users\micha\source\repos\ControleBar\ControleBar\bin\Debug\ControleBar.exe
+C:\Users\micha\source\repos\ControleBar\ControleBar\bin\Debug\ControleBar.pdb
+C:\Users\micha\source\repos\ControleBar\ControleBar\obj\Debug\ControleBar.csprojAssemblyReference.cache
+C:\Users\micha\source\repos\ControleBar\ControleBar\obj\Debug\ControleBar.Form1.resources
+C:\Users\micha\source\repos\ControleBar\ControleBar\obj\Debug\ControleBar.Properties.Resources.resources
+C:\Users\micha\source\repos\ControleBar\ControleBar\obj\Debug\ControleBar.csproj.GenerateResource.cache
+C:\Users\micha\source\repos\ControleBar\ControleBar\obj\Debug\ControleBar.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\ControleBar\ControleBar\obj\Debug\ControleBar.exe
+C:\Users\micha\source\repos\ControleBar\ControleBar\obj\Debug\ControleBar.pdb
