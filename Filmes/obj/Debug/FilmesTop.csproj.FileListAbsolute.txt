@@ -1,0 +1,5 @@
+C:\Users\micha\source\repos\Filmes\Filmes\obj\Debug\FilmesTop.csprojAssemblyReference.cache
+C:\Users\micha\source\repos\Filmes\Filmes\obj\Debug\Filmes.Form1.resources
+C:\Users\micha\source\repos\Filmes\Filmes\obj\Debug\Filmes.Properties.Resources.resources
+C:\Users\micha\source\repos\Filmes\Filmes\obj\Debug\FilmesTop.csproj.GenerateResource.cache
+C:\Users\micha\source\repos\Filmes\Filmes\obj\Debug\FilmesTop.csproj.CoreCompileInputs.cache
