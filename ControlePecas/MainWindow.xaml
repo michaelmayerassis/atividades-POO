@@ -1,0 +1,44 @@
+﻿<Window x:Class="ControlePecas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlePecas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="frmFornecedor">
+        <Label x:Name="lblNome" Content="Fornecedor" HorizontalAlignment="Left" Margin="16,93,0,0" VerticalAlignment="Top" Height="37" Width="66"/>
+        <TextBox x:Name="tbxFornecedor" HorizontalAlignment="Left" Height="23" Margin="102,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <Label x:Name="lblFantasia" Content="Nome Fantasia" HorizontalAlignment="Left" Margin="325,92,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxFantasia" HorizontalAlignment="Left" Height="23" Margin="422,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="lblInscEstadual" Content="Insc.Estadual" HorizontalAlignment="Left" Margin="13,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxInsEstadual" HorizontalAlignment="Left" Height="23" Margin="102,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lblTelefone" Content="Telefone" HorizontalAlignment="Left" Margin="216,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxTelefone" HorizontalAlignment="Left" Height="23" Margin="277,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
+        <Button x:Name="btnCadFornecedor" Content="Cadastrar Fornecedor" HorizontalAlignment="Left" Margin="33,18,0,0" VerticalAlignment="Top" Width="75" Click="BtnCadFornecedor_Click"/>
+        <Button x:Name="btnCadPeca" Content="Cadastrar Peça" HorizontalAlignment="Left" Margin="131,17,0,0" VerticalAlignment="Top" Width="75" Click="BtnCadPeca_Click"/>
+        <Button x:Name="btnSaidaPeca" Content="Solocitação de Peça" HorizontalAlignment="Left" Margin="228,18,0,0" VerticalAlignment="Top" Width="75" Click="BtnSaidaPeca_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="347,18,0,0" VerticalAlignment="Top" Width="75" Click="BtnAlterar_Click"/>
+        <Label x:Name="lblCNPJ" Content="CNPJ" HorizontalAlignment="Left" Margin="619,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.192,0.577"/>
+        <TextBox x:Name="tbxCNPJ" HorizontalAlignment="Left" Height="23" Margin="662,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113"/>
+        <Label x:Name="lblFax" Content="FAX" HorizontalAlignment="Left" Margin="428,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbFax" HorizontalAlignment="Left" Height="23" Margin="489,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
+        <Label Content="CEP" HorizontalAlignment="Left" Margin="17,192,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCEP" HorizontalAlignment="Left" Height="23" Margin="103,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Endereço" HorizontalAlignment="Left" Margin="236,192,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxEndereco" HorizontalAlignment="Left" Height="23" Margin="297,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cidade" HorizontalAlignment="Left" Margin="446,192,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCidade" HorizontalAlignment="Left" Height="23" Margin="507,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Estado" HorizontalAlignment="Left" Margin="649,198,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbxEstado" HorizontalAlignment="Left" Margin="694,198,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.324,0.545">
+            <ComboBoxItem Content="hjghj"/>
+            <ListBoxItem Content="hjjhbj"/>
+        </ComboBox>
+        <Label Content="Bairro" HorizontalAlignment="Left" Margin="16,245,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxBairro" HorizontalAlignment="Left" Height="23" Margin="103,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="271,245,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbdEmail" HorizontalAlignment="Left" Height="23" Margin="328,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="434"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="467,16,0,0" VerticalAlignment="Top" Width="75" Click="BtnSalvar_Click"/>
+
+    </Grid>
+</Window>

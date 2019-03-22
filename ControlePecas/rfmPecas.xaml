@@ -1,0 +1,55 @@
+﻿<Window x:Class="ControlePecas.rfmPecas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlePecas"
+        mc:Ignorable="d"
+        Title="rfmPecas" Height="607.5" Width="800">
+    <Grid x:Name="frmPecas" Margin="0,-24,0,24">
+        <Label x:Name="lblNome" Content="Nome Peça" HorizontalAlignment="Left" Margin="21,93,0,0" VerticalAlignment="Top" Height="37" Width="66"/>
+        <TextBox x:Name="tbxNome" HorizontalAlignment="Left" Height="23" Margin="102,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <Label x:Name="lblGrupo" Content="Grupo Peça" HorizontalAlignment="Left" Margin="288,93,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbxGrupo" HorizontalAlignment="Left" Margin="375,94,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblCodigo" Content="Codigo" HorizontalAlignment="Left" Margin="501,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCodigo" HorizontalAlignment="Left" Height="23" Margin="548,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <Label x:Name="lblQtdMin" Content="Qtd.Minima" HorizontalAlignment="Left" Margin="492,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxQtdMin" HorizontalAlignment="Left" Height="23" Margin="567,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" Text="1"/>
+        <Label x:Name="lblQtdMax" Content="Qtd.Estoque" HorizontalAlignment="Left" Margin="612,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxEstoque" HorizontalAlignment="Left" Height="23" Margin="682,146,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="48"/>
+        <Button x:Name="btnCadFornecedor" Content="Cadastrar Fornecedor" HorizontalAlignment="Left" Margin="33,18,0,0" VerticalAlignment="Top" Width="75" Click="BtnCadFornecedor_Click"/>
+        <Button x:Name="btnCadPeca" Content="Cadastrar Peça" HorizontalAlignment="Left" Margin="131,17,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnSaidaPeca" Content="Solocitação de Peça" HorizontalAlignment="Left" Margin="228,18,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="347,18,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Fornecedor" HorizontalAlignment="Left" Margin="24,141,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbxFornecedor" HorizontalAlignment="Left" Margin="101,142,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label Content="Valor unitario" HorizontalAlignment="Left" Margin="19,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxValor" HorizontalAlignment="Left" Height="23" Margin="104,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="localização" HorizontalAlignment="Left" Margin="251,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxLocal" HorizontalAlignment="Left" Height="23" Margin="326,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Pratileira" HorizontalAlignment="Left" Margin="449,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxPratileira" HorizontalAlignment="Left" Height="23" Margin="510,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88"/>
+        <Label Content="Nº Caixa" HorizontalAlignment="Left" Margin="599,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCaixa" HorizontalAlignment="Left" Height="23" Margin="660,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+        <Label Content="Descrição" HorizontalAlignment="Left" Margin="34,224,0,0" VerticalAlignment="Top"/>
+        <Label Content="Aplicação" HorizontalAlignment="Left" Margin="37,312,0,0" VerticalAlignment="Top"/>
+        <RichTextBox x:Name="rtbDescricao" HorizontalAlignment="Left" Height="68" Margin="104,224,0,0" VerticalAlignment="Top" Width="625">
+            <FlowDocument/>
+        </RichTextBox>
+        <RichTextBox HorizontalAlignment="Left" Height="68" Margin="104,306,0,0" VerticalAlignment="Top" Width="625">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="467,16,0,0" VerticalAlignment="Top" Width="75" Click="BtnSalvar_Click"/>
+        <Label x:Name="lblQtdMin_Copy" Content="Und.Medida" HorizontalAlignment="Left" Margin="375,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxUndMedida" HorizontalAlignment="Left" Height="23" Margin="450,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="lblCodigo_Copy" Content="Data" HorizontalAlignment="Left" Margin="621,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxData" HorizontalAlignment="Left" Height="23" Margin="662,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="577,16,0,0" VerticalAlignment="Top" Width="75" Click="BtnListar_Click"/>
+        <DataGrid x:Name="dgListar" HorizontalAlignment="Left" Height="151" Margin="107,405,0,0" VerticalAlignment="Top" Width="622"/>
+
+    </Grid>
+</Window>

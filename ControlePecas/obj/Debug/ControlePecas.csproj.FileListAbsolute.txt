@@ -1,0 +1,17 @@
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\bin\Debug\ControlePecas.exe.config
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\bin\Debug\ControlePecas.exe
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\bin\Debug\ControlePecas.pdb
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas.csprojAssemblyReference.cache
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\MainWindow.g.cs
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\App.g.cs
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas_MarkupCompile.cache
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas_MarkupCompile.lref
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\MainWindow.baml
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas.g.resources
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas.Properties.Resources.resources
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas.csproj.GenerateResource.cache
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas.exe
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\ControlePecas.pdb
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\rfmPecas.g.cs
+C:\Users\micha\source\repos\ControlePecas\ControlePecas\obj\Debug\rfmPecas.baml
