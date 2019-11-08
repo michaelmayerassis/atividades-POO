@@ -53,9 +53,8 @@
             <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="41" Margin="373,93,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="394" FontSize="24"/>
             <Label Content="Qtd.Titulos:" HorizontalAlignment="Left" Margin="781,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.273,1.692" Width="130"/>
             <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="41" Margin="925,93,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="144" FontSize="24"/>
-            <TextBox x:Name="txtArquivo" Margin="0,496,44,60" BorderBrush="#FF9B9B9B" BorderThickness="1" Grid.RowSpan="2"/>
-            <Label Content="CRIAR OU ALTERAR ARQUIVOS - INSIRA O CAMINHO DO DIRETORIO" HorizontalAlignment="Left" Margin="290,412,0,0" VerticalAlignment="Top" Height="28" Width="541" FontWeight="Bold" FontSize="16"/>
-            <TextBox x:Name="txtCaminho" HorizontalAlignment="Left" Height="41" Margin="1,447,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="1068" FontSize="24" BorderThickness="1"/>
+            <TextBox x:Name="txtArquivo" Margin="0,457,44,60" BorderBrush="#FF9B9B9B" BorderThickness="1" Grid.RowSpan="2" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <Label Content="CRIAR OU ALTERAR ARQUIVOS " HorizontalAlignment="Left" Margin="450,416,0,0" VerticalAlignment="Top" Height="28" Width="258" FontWeight="Bold" FontSize="16"/>
         </Grid>
 
         <Grid x:Name="GridMenu" Width="48" HorizontalAlignment="Left" >

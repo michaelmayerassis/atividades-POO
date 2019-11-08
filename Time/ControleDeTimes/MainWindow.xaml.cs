@@ -1,5 +1,6 @@
 ﻿using ControleDeTimes.DAO;
 using ControleDeTimes.Models;
+using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Windows;
@@ -16,10 +17,12 @@ namespace ControleDeTimes
     public partial class MainWindow : Window
     {
         private Time time;
+        private OpenFileDialog openFileDialog;
         private readonly TimeDAO timedao;
         public MainWindow()
         {
             InitializeComponent();
+            openFileDialog = new OpenFileDialog();
             time = new Time();
             timedao = new TimeDAO();
             dgListar.ItemsSource = timedao.ListarTime();
@@ -237,16 +240,19 @@ namespace ControleDeTimes
             {
                 case "salvar":
                     ButtonCloseMenu.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
-                    if (txtCaminho.Text == "")
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.Title = "Salvar Arquivo Texto";
+                    saveFileDialog.Filter = "Text File|.txt";
+                    saveFileDialog.FilterIndex = 0;
+                    saveFileDialog.DefaultExt = ".txt";
+                    saveFileDialog.RestoreDirectory = true;
+
+                    if (saveFileDialog.ShowDialog() == true)
                     {
-                        MessageBox.Show("insira um caminho de diretorio");
-                    }
-                    else
-                    {
-                        Stream stream1 = File.Open(txtCaminho.Text, FileMode.OpenOrCreate);
-                        StreamWriter reader1 = new StreamWriter(stream1);
-                        reader1.WriteLine(txtArquivo.Text);
-                        reader1.Close();
+                        FileStream stream1 = new FileStream(saveFileDialog.FileName, FileMode.OpenOrCreate);
+                        StreamWriter writer = new StreamWriter(stream1);
+                        writer.Write(txtArquivo.Text);
+                        writer.Close();
                         stream1.Close();
                         MessageBox.Show("salvo");
                     }
@@ -254,31 +260,23 @@ namespace ControleDeTimes
 
                 case "abrir":
                     ButtonCloseMenu.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
-                    if (txtCaminho.Text == "")
-                    {
-                        MessageBox.Show("insira um caminho de diretorio");
-                    }
-                    else
-                    {
-                        txtArquivo.Text = "";
-                        Stream stream = File.Open(txtCaminho.Text, FileMode.Open);
-                        StreamReader reader = new StreamReader(stream);
-                        string linha;
-                        while ((linha = reader.ReadLine()) != null)
-                        {
-                            txtArquivo.AppendText(linha);
-                            txtArquivo.AppendText(Environment.NewLine);
-                        }
-                        reader.Close();
-                        stream.Close();
+                    OpenFileDialog openFileDialog = new OpenFileDialog();
+                    if (openFileDialog.ShowDialog() == true)
+                    {                      
+                            txtArquivo.Text = "";
+                            Stream stream = File.Open(openFileDialog.FileName, FileMode.Open);
+                            StreamReader reader = new StreamReader(stream);
+                            string linha;
+                            while ((linha = reader.ReadLine()) != null)
+                            {
+                                txtArquivo.AppendText(linha);
+                                txtArquivo.AppendText(Environment.NewLine);
+                            }
+                            reader.Close();
+                            stream.Close();                        
                     }
                     break;
             }
-        }
-
-        private void ListView_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
-        {
-
         }
 
         private void ListView_MouseDoubleClick_2(object sender, MouseButtonEventArgs e)
@@ -287,16 +285,19 @@ namespace ControleDeTimes
             {
                 case "salvar":
                     ButtonCloseMenu.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
-                    if (txtCaminho.Text == "")
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.Title = "Salvar Arquivo Texto";
+                    saveFileDialog.Filter = "Text File|.txt";
+                    saveFileDialog.FilterIndex = 0;
+                    saveFileDialog.DefaultExt = ".txt";
+                    saveFileDialog.RestoreDirectory = true;
+
+                    if (saveFileDialog.ShowDialog() == true)
                     {
-                        MessageBox.Show("insira um caminho de diretorio");
-                    }
-                    else
-                    {
-                        Stream stream1 = File.Open(txtCaminho.Text, FileMode.OpenOrCreate);
-                        StreamWriter reader1 = new StreamWriter(stream1);
-                        reader1.WriteLine(txtArquivo.Text);
-                        reader1.Close();
+                        FileStream stream1 = new FileStream(saveFileDialog.FileName, FileMode.OpenOrCreate);
+                        StreamWriter writer = new StreamWriter(stream1);
+                        writer.Write(txtArquivo.Text);
+                        writer.Close();
                         stream1.Close();
                         MessageBox.Show("salvo");
                     }
@@ -304,14 +305,11 @@ namespace ControleDeTimes
 
                 case "abrir":
                     ButtonCloseMenu.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
-                    if (txtCaminho.Text == "")
-                    {
-                        MessageBox.Show("insira um caminho de diretorio");
-                    }
-                    else
+                    OpenFileDialog openFileDialog = new OpenFileDialog();
+                    if (openFileDialog.ShowDialog() == true)
                     {
                         txtArquivo.Text = "";
-                        Stream stream = File.Open(txtCaminho.Text, FileMode.Open);
+                        Stream stream = File.Open(openFileDialog.FileName, FileMode.Open);
                         StreamReader reader = new StreamReader(stream);
                         string linha;
                         while ((linha = reader.ReadLine()) != null)
